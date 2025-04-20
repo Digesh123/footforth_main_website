@@ -1,0 +1,174 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f9f9f9;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+  .navbar .logo img {
+    width: 140px;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  .navbar ul li a:hover {
+    color: #007BFF;
+  }
+  
+  /* Mobile Nav */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: none;
+      flex-direction: column;
+      background: #fff;
+      padding: 20px;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .navbar ul.show {
+      display: flex;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #f0f2ff, #fff);
+    animation: fadeIn 1.2s ease-in-out;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    color: #222;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+  }
+  .hero .btn {
+    background: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .hero .btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 80px 20px;
+    background: #fff;
+  }
+  .services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  .service-card {
+    background: #f0f4ff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  .service-card h3 {
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose {
+    padding: 80px 20px;
+  }
+  .why-choose h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .why-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .why-card {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 25px;
+    border-left: 5px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+  }
+  .why-card:hover {
+    border-left-color: #0056b3;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
