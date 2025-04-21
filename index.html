@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Footforth - IT Solutions</title>
   <link rel="stylesheet" href="css/style.css"/>
+  <!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<!-- AOS (Animate On Scroll) CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
 </head>
 <body>
   <!-- Navbar -->
@@ -52,15 +58,117 @@
     </div>
   </section>
 
-  <!-- Dummy Content for Scroll -->
-  <section class="dummy-content">
-    <div class="container">
-      <h2>Our Services</h2>
-      <p>This is placeholder content to enable scrolling and observe navbar behavior...</p>
-      <p style="margin-bottom: 2000px;">Scroll down to see the sticky white navbar in action.</p>
+<!-- About Us Section -->
+<section class="about-section">
+
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Empowering Businesses Through Simplified IT</h2>
+    <p class="about-intro" data-aos="fade-up" data-aos-delay="100">
+      At Footforth, we understand how complex, time-consuming, and costly IT operations can be. Our mission is to take that weight off your shoulders — so you can focus on what matters most: growing your business.
+    </p>
+
+    <div class="about-cards"> 
+      <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-hands-helping"></i>
+        <h3>We’re Your Tech Allies</h3>
+        <p>No complications — just honest, clear guidance for managing your digital essentials.</p>
+      </div>
+
+      <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-hourglass-half"></i>
+        <h3>Saving Time & Headaches</h3>
+        <p>From domain setups to workspace management, we handle it all — so you don't have to.</p>
+      </div>
+
+      <div class="about-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-seedling"></i>
+        <h3>Built for Growing Teams</h3>
+        <p>Whether you're just starting up or scaling fast, we adapt our solutions to your business needs.</p>
+      </div>
+
     </div>
-  </section>
+  </div>
+
+</section>
+
+<!-- Workflow Section -->
+<section class="workflow" id="workflow">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">How Our Services Work Together</h2>
+    
+    <!-- SVG Line Background (Desktop Only) -->
+    <svg class="workflow-lines" viewBox="0 0 1200 200" preserveAspectRatio="none">
+      <path d="M 60 100 C 150 50, 250 150, 350 100 C 450 50, 550 150, 650 100 C 750 50, 850 150, 950 100 C 1050 50, 1150 150, 1250 100" stroke="#ccc" fill="transparent" stroke-width="2" />
+    </svg>
+
+    <div class="workflow-grid">
+      <a href="#domain" class="workflow-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-globe"></i>
+        <h3>Domain & DNS Management</h3>
+        <p>Register your domain and manage DNS for smooth online operations.</p>
+      </a>
+
+      <div class="workflow-arrow bounce-arrow">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+
+      <a href="#email" class="workflow-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-envelope"></i>
+        <h3>Managed Email Solutions</h3>
+        <p>Professional email using Google Workspace or Zoho Workspace.</p>
+      </a>
+
+      <div class="workflow-arrow bounce-arrow">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+
+      <a href="#webdev" class="workflow-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Website Dev & Hosting</h3>
+        <p>Custom websites hosted on reliable servers, fully optimized.</p>
+      </a>
+
+      <div class="workflow-arrow bounce-arrow">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+
+      <a href="#security" class="workflow-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Security & SSL</h3>
+        <p>Secure your website and data with SSL certificates and protections.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Wnychoose  Section -->
+<section class="why-choose-us-section">
+  <h2 class="section-title">Why Choose Us</h2>
+  <div class="why-cards-container">
+    <div class="why-card" id="card1">
+      <div class="icon-wrapper"><i class="fas fa-tools"></i></div>
+      <h3>Complete IT Solutions</h3>
+      <p class="card-description">We provide everything from domains and hosting to email and security, all managed under one roof for your convenience.</p>
+    </div>
+    <div class="why-card" id="card2">
+      <div class="icon-wrapper"><i class="fas fa-user-shield"></i></div>
+      <h3>Reliable & Secure</h3>
+      <p class="card-description">Our systems are optimized for uptime, security, and performance, ensuring your business is always online and protected.</p>
+    </div>
+    <div class="why-card" id="card3">
+      <div class="icon-wrapper"><i class="fas fa-headset"></i></div>
+      <h3>Expert Support</h3>
+      <p class="card-description">Our support team is just a message away. From setup to scale, we’re here to help you every step of the way.</p>
+    </div>
+  </div>
+</section>
 
   <script src="js/script.js"></script>
+  <!-- AOS Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
