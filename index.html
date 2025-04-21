@@ -1,95 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Footforth IT Solutions</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Footforth - IT Solutions</title>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
-
 <body>
   <!-- Navbar -->
-  <header class="navbar">
-    <div class="container">
-      <img src="./img/logo-navbar.png" alt="Footforth Logo" class="logo" />
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#why-us">Why Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <header class="navbar transparent">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="img/footforth logo final-01.png" alt="Footforth Logo" />
+      </div>
+
+      <!-- Blurred Nav Links -->
+      <div class="blurred-nav">
+        <nav class="nav-center">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <a href="#" class="contact-btn">Contact Us</a>
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">&#9776;</div>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h1 class="fade-in">Let Your Business Focus. <br>We Handle Your IT.</h1>
-      <p class="fade-in-delay">From domains to cloud – Footforth is your trusted IT partner.</p>
-      <a href="#contact" class="btn fade-in-delay">Get in Touch</a>
+    <div class="hero-content">
+      <h1>Transform Business with Reliable IT Solutions That Scale</h1>
+      <p>Tailored IT solutions designed to enhance your business efficiency, security, and performance.</p>
+      <a href="#" class="btn-get-started">
+        <span class="text">Get Started</span>
+        <span class="arrow">&#8593;</span>
+      </a>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="section" id="services">
+  <!-- Dummy Content for Scroll -->
+  <section class="dummy-content">
     <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Domain & Hosting</h3>
-          <p>Secure domains and reliable hosting for businesses of all sizes.</p>
-        </div>
-        <div class="card">
-          <h3>Email Solutions</h3>
-          <p>Professional emails powered by Google Workspace & Zoho.</p>
-        </div>
-        <div class="card">
-          <h3>Cloud Services</h3>
-          <p>Optimized and managed AWS infrastructure tailored to your needs.</p>
-        </div>
-        <div class="card">
-          <h3>Web Development</h3>
-          <p>Stunning websites that are fast, secure, and mobile-ready.</p>
-        </div>
-      </div>
+      <h2>Our Services</h2>
+      <p>This is placeholder content to enable scrolling and observe navbar behavior...</p>
+      <p style="margin-bottom: 2000px;">Scroll down to see the sticky white navbar in action.</p>
     </div>
   </section>
 
-  <!-- Why Choose Us Section -->
-  <section class="section bg-light" id="why-us">
-    <div class="container">
-      <h2 class="section-title">Why Choose Footforth?</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>One-Stop IT Partner</h3>
-          <p>We cover all technical needs so you can focus on what matters.</p>
-        </div>
-        <div class="card">
-          <h3>Professional Support</h3>
-          <p>Our team is available and responsive whenever you need us.</p>
-        </div>
-        <div class="card">
-          <h3>Affordable Pricing</h3>
-          <p>Top-notch solutions without burning a hole in your budget.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section (Just a placeholder) -->
-  <section class="section" id="contact">
-    <div class="container">
-      <h2 class="section-title">Let’s Connect</h2>
-      <p>Email us at <a href="mailto:hello@footforth.in">hello@footforth.in</a></p>
-    </div>
-  </section>
-
-  <script src="./js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
