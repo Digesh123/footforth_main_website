@@ -15,5 +15,3 @@ window.addEventListener('scroll', () => {
 menuToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('show');
 });
-
-
