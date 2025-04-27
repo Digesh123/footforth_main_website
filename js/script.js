@@ -15,3 +15,9 @@ window.addEventListener('scroll', () => {
 menuToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('show');
 });
+
+AOS.init({
+  duration: 1000,
+  once: true
+});
+

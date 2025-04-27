@@ -384,101 +384,143 @@ a {
     display: none;
   }
 }
+
+/* why choose us */
 .why-choose-us-section {
-  padding: 4rem 2rem;
-  background: linear-gradient(to right, #f9fbff, #e9f0ff);
-  text-align: center;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #1a1a1a;
-}
-
-.why-cards-container {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.why-card {
-  background: white;
-  padding: 2rem;
-  width: 300px;
-  border-radius: 1.5rem;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  cursor: pointer;
-  flex-grow: 1;
   position: relative;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f9f9ff 0%, #edf2fc 100%);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
 }
 
-.why-card:hover {
-  transform: scale(1.1);
-  z-index: 2;
+.decorative-shape {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at center, #cde1ff 0%, transparent 70%);
+  z-index: 0;
+  opacity: 0.5;
+}
+.why-choose-us-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 80px;
+  align-items: start;
 }
 
-.why-card:hover ~ .why-card {
-  transform: scale(0.95);
-  opacity: 0.7;
+.left-side h2 {
+  font-size: 2.8rem;
+  color: #111;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
-.icon-wrapper {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: white;
-  width: 70px;
-  height: 70px;
-  margin-inline: auto;
+.left-side ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left-side ul li {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  gap: 15px;
+  border-radius: 12px;
+  padding: 12px 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  will-change: transform, box-shadow;
+}
+.left-side ul li img {
+  width: 32px;
+  height: 32px;
+}
+.left-side ul li i {
+  transition: transform 0.4s ease;
+}
+.left-side ul li:hover i {
+  transform: rotate(8deg) scale(1.1);
 }
 
-#card1 .icon-wrapper {
-  background-color: #4a90e2;
+/* Hover effect on list items */
+.left-side ul li:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: #f9f9f9;
 }
 
-#card2 .icon-wrapper {
-  background-color: #50e3c2;
+.vertical-line {
+  width: 1px;
+  background: linear-gradient(to bottom, #ccc, #999);
+  height: 100%;
 }
 
-#card3 .icon-wrapper {
-  background-color: #f5a623;
+.right-side .card {
+  background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+  padding: 30px 25px;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s ease-in-out;
+  will-change: transform, box-shadow;
 }
 
-.why-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+/* Hover effect on Vision and Mission cards */
+.right-side .card:hover {
+  transform: translateY(-12px) scale(1.04);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.right-side h3 {
+  font-size: 2.2rem;
   color: #222;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.card-description {
-  font-size: 1rem;
+.right-side h3 i {
+  color: #007bff;
+}
+
+.right-side p {
+  font-size: 1.1rem;
   color: #555;
-  display: block;
-  transition: opacity 0.3s;
+  line-height: 1.7;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-  .why-cards-container {
-    flex-direction: column;
-    align-items: center;
+  .why-choose-us-section .container {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .why-card {
-    width: 100%;
-    max-width: 400px;
+  .vertical-line {
+    display: none;
   }
 
-  .why-card:hover ~ .why-card {
-    transform: scale(1);
-    opacity: 1;
+  .left-side ul li {
+    justify-content: center;
+  }
+
+  .right-side h3 {
+    justify-content: center;
   }
 }
+
+/* reviews section */
+
 
 
 /* Mobile Menu */
@@ -558,13 +600,4 @@ a {
     to {opacity: 1;}
   }
   
-}
-
-/* Dummy content */
-.dummy-content {
-  padding: 100px 20px;
-}
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
+} 
