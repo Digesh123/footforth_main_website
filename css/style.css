@@ -618,72 +618,101 @@ a {
 
 
 /* Service Section */
-.service-section {
-  padding: 80px 20px;
-  background: #f9f9f9;
+/* DNS Wave Section */
+
+.dns-service-section {
+  background: #f9fbff;
+  padding: 100px 20px;
 }
 
-.service-card {
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+.dns-service-container {
+  max-width: 1200px;
+  margin: auto;
   text-align: center;
-  transition: transform 0.3s;
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
-}
-
-.service-card .icon {
-  font-size: 50px;
-  color: #00bcd4;
+.dns-service-header h2 {
+  font-size: 2.8rem;
+  color: #0d2d66;
   margin-bottom: 20px;
 }
 
-.service-card h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.service-card p {
-  font-size: 16px;
-  margin-bottom: 20px;
+.dns-service-header p {
   color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 60px;
 }
 
-.service-benefits {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 30px;
+.dns-service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.service-benefits li {
-  margin: 10px 0;
-  font-size: 16px;
-  color: #333;
+.dns-card {
+  background: #ffffff;
+  padding: 40px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  width: 300px;
+  text-align: center;
 }
 
-.service-benefits i {
-  color: #00bcd4;
-  margin-right: 8px;
+.dns-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 
-.btn-primary {
-  background-color: #00bcd4;
+.dns-icon {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
   color: white;
-  padding: 12px 30px;
-  border-radius: 30px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.dns-card h4 {
+  font-size: 1.4rem;
+  color: #0d2d66;
+  margin-bottom: 10px;
+}
+
+.dns-card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.dns-register-btn {
+  margin-top: 60px;
+}
+
+.register-domain-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 40px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #0288a4;
+.register-domain-btn:hover {
+  background-color: #0056b3;
 }
 
-
+@media (max-width: 768px) {
+  .dns-service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 /* Mobile Menu */
