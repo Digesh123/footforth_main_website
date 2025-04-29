@@ -619,10 +619,19 @@ a {
 
 /* Service Section */
 /* DNS Wave Section */
+/* Wave Divider */
+.wave-top {
+  margin-top: 80px; /* Creates breathing room below navbar */
+  line-height: 0;
+  overflow: hidden;
+}
 
+/* DNS Section */
 .dns-service-section {
   background: #f9fbff;
-  padding: 100px 20px;
+  padding: 60px 20px 100px;
+  position: relative;
+  z-index: 1;
 }
 
 .dns-service-container {
@@ -632,15 +641,17 @@ a {
 }
 
 .dns-service-header h2 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   color: #0d2d66;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .dns-service-header p {
   color: #555;
   font-size: 1.1rem;
   margin-bottom: 60px;
+  max-width: 600px;
+  margin-inline: auto;
 }
 
 .dns-service-cards {
@@ -653,20 +664,21 @@ a {
 .dns-card {
   background: #ffffff;
   padding: 40px 25px;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  border-radius: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease-in-out;
   width: 300px;
   text-align: center;
+  position: relative;
 }
 
 .dns-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  transform: translateY(-12px) scale(1.03) rotate(-0.5deg);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
 }
 
 .dns-icon {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
+  background: linear-gradient(135deg, #007bff, #00bfff);
   color: white;
   width: 70px;
   height: 70px;
@@ -676,17 +688,18 @@ a {
   margin: 0 auto 20px;
   border-radius: 50%;
   font-size: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
 }
 
 .dns-card h4 {
   font-size: 1.4rem;
   color: #0d2d66;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .dns-card p {
   color: #666;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .dns-register-btn {
@@ -696,15 +709,17 @@ a {
 .register-domain-btn {
   background-color: #007bff;
   color: #fff;
-  padding: 14px 30px;
+  padding: 14px 34px;
   border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.3);
 }
 
 .register-domain-btn:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -714,6 +729,93 @@ a {
   }
 }
 
+/* Managed email service*/
+.email-solutions {
+  padding: 60px 80px;
+  background-color: #f9fbff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.email-solutions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.image-section {
+  flex: 1;
+
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image-tagline {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.features-section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.feature-card h4 {
+  font-size: 1.1rem;
+  color: #2a4d9b;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .email-solutions-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-solutions {
+    padding: 0px 10px;
+}
+
+  .features-section {
+    width: 100%;
+  }
+
+  .image-section {
+    width: 100%;
+  }
+}
 
 /* Mobile Menu */
 .mobile-menu {
