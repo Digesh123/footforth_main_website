@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Footforth - IT Solutions</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<!-- AOS (Animate On Scroll) CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar transparent">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="img/footforth logo final-01.png" alt="Footforth Logo" />
+      </div>
+  
+      <!-- Blurred Nav Links -->
+      <div class="blurred-nav">
+        <nav class="nav-center">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <!-- <li><a href="about.html">About Us</a></li> -->
+          </ul>
+        </nav>
+      </div>
+  
+      <div class="nav-right">
+        <a href="contact.html" class="contact-btn">Contact Us</a>
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">&#9776;</div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <!-- <li><a href="about.html">About Us</a></li> -->
+        <li><a class="contact-mobile-btn" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+<!-- CONTACT SECTION -->
+<section class="contact-container" id="contact">
+    <div class="contact-wrapper">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <h4>Email</h4>
+          <p>inquiry@footforth.com</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-phone"></i>
+          <h4>Phone</h4>
+          <p>+91 98765 43210</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Location</h4>
+          <p>Mumbai, Maharashtra, India</p>
+        </div>
+      </div>
+  
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form action="https://formspree.io/f/xzzreqjj" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+          
+            <select name="service" required>
+              <option value="" disabled selected>Select a Service</option>
+              <option value="Domain Registration">Domain Registration</option>
+              <option value="Web Hosting">Web Hosting</option>
+              <option value="Google Workspace">Google Workspace</option>
+              <option value="Zoho Mail">Zoho Mail</option>
+              <option value="Website Development">Website Development</option>
+              <option value="SSL Certificate">SSL Certificate</option>
+              <option value="Other">Other</option>
+            </select>
+          
+            <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9]{10}" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          
+            <button type="submit">Submit</button>
+          </form>
+          
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ SECTION -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <button class="accordion">1. What services does Footforth provide?</button>
+      <div class="panel"><p>We offer domain registration, DNS management, hosting, email solutions (Google Workspace & Zoho), SSL, and website development.</p></div>
+  
+      <button class="accordion">2. How can I transfer my domain to Footforth?</button>
+      <div class="panel"><p>We help with the domain transfer process end-to-end. You’ll need the EPP code from your current registrar.</p></div>
+  
+      <button class="accordion">3. Do you offer managed Google Workspace services?</button>
+      <div class="panel"><p>Yes, we manage everything from setup to ongoing support for Google Workspace and Zoho Mail.</p></div>
+  
+      <button class="accordion">4. Can you build a custom website for my business?</button>
+      <div class="panel"><p>Absolutely! We create professional websites tailored to your needs using modern design and code.</p></div>
+    </div>
+  </section>
+  
+  
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-about">
+        <img src="img/footforth logo final-01.png" alt="Footforth Logo" class="footer-logo" />
+        <p>Your trusted partner for simplified and secure IT management solutions. Empowering businesses to grow with confidence.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-services">
+        <h4>Our Services</h4>
+        <ul>
+            <li><a href="services.html#dns-service">Domain & DNS</a></li>
+            <li><a href="services.html#managed-email">Email Solutions</a></li>
+            <li><a href="services.html#web-dev">Web Development</a></li>
+            <li><a href="services.html#SSL">Security & SSL</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</p>
+        <p><i class="fas fa-envelope"></i> support@footforth.com</p>
+        <p><i class="fas fa-phone"></i> +91 9619040970</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/footforth_solutions"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/footforth-solutions/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 Footforth Solutions. All rights reserved.</p>
+    </div>
+  
+  </footer>
+  
+  <script>
+    const acc = document.querySelectorAll(".accordion");
+    acc.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+  
+  
+    <script src="js/script.js"></script>
+    <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  </body>
+  </html>
