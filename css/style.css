@@ -727,6 +727,10 @@ a {
     flex-direction: column;
     align-items: center;
   }
+
+  .dns-card {
+    width: auto;
+  }
 }
 
 /* Managed email service*/
